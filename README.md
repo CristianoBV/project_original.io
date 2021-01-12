@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./screen/web.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center"> 
+ ⚡️ Original.io ⚡️ Concluido...
+</h4>
 
-## Available Scripts
+## 💻 Sobre o projeto
 
-In the project directory, you can run:
+⚡️ Original.io - Projeto teste, criação do layout, desafio.
 
-### `yarn start`
+Projeto desenvolvido com Reactjs com API hospedada na Heroku.
+Ótimo desafio e aprendizado..
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🎨 Layout
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O layout da aplicação está disponível no Figma:
 
-### `yarn test`
+<a href="https://www.figma.com/file/MOlhG4R9BQMlNjiFRG8Keo/Original.io-frontend-test?node-id=0%3A1">
+  <img alt="Made by tgmarinho" src="https://www.figma.com/file/MOlhG4R9BQMlNjiFRG8Keo/Original.io-frontend-test?node-id=0%3A1">
+</a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Mobile
 
-### `yarn build`
+<p align="center">
+  <img alt="Original.io" title="#Original.io" src="./screen/mobile.png" width="200px">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <img alt="Original.io" title="#Original.io" src="./screen/mobile02.png" width="200px">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Web
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Original.io" title="#Original.io" src="./screen/web.png" width="800px">
+</p>
 
-### `yarn eject`
+## 🛠 Tecnologias
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As seguintes ferramentas foram usadas na construção do projeto:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React][reactjs]
+- [Node.js][nodejs]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🚀 Como executar o projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Podemos considerar este projeto como sendo divido em duas partes:
 
-## Learn More
+1. Back End (https://github.com/CristianoBV/api_rest_original.io)
+2. Front End (https://github.com/CristianoBV/project_original.io)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+💡Front End precisam que o Back End esteja sendo executado para funcionar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Pré-requisitos
 
-### Code Splitting
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js][nodejs].
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🧭 Rodando a aplicação web (Front End)
 
-### Analyzing the Bundle Size
+```bash
+# Clone este repositório
+$ git clone https://github.com/CristianoBV/project_original.io
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Acesse a pasta do projeto no terminal/cmd
+$ cd nlw1
 
-### Making a Progressive Web App
+# Vá para a pasta server
+$ cd server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Instale as dependências
+$ yarn install
 
-### Advanced Configuration
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev:server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# O servidor inciará na porta:3000 - acesse http://localhost:3000
+```
 
-### Deployment
+### 🎲 Rodando o Back End (servidor)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+# Clone este repositório
+$ https://github.com/CristianoBV/api_rest_original.io
 
-### `yarn build` fails to minify
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd nlw1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Vá para a pasta da aplicação Front End
+$ cd server
+
+# Instale as dependências
+$ yarn install
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3333
+# Necessário hospedar na Heroku
+```
+
+## 📝 Licença
+
+Este projeto esta sobe a licença.
+
+Feito com ❤️ por cristiano Borges 👋🏽 [Entre em contato!](https://www.linkedin.com/in/cristianobv/)
+
+[nodejs]: https://nodejs.org/
+[reactjs]: https://reactjs.org
+[yarn]: https://yarnpkg.com/
+[vscode]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[license]: https://github.com/CristianoBV/privacy_policy
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
