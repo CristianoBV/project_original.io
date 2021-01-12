@@ -103,7 +103,7 @@ const Shopping = (props) => {
           <Item>
             <Info>
               <Image>
-                <img src={product1} alt="Product name" />
+                <img src={product2} alt="Product name" />
               </Image>
               <Detail>
                 <p>Bolsa Bege Lorena</p>
@@ -211,7 +211,7 @@ const Shopping = (props) => {
           <Item>
             <Info>
               <Image>
-                <img src={product1} alt="Product name" />
+                <img src={product4} alt="Product name" />
               </Image>
               <Detail>
                 <p>Bolsa Bege Lorena</p>
@@ -283,28 +283,5 @@ const Shopping = (props) => {
     </section>
   );
 };
-
-//   return (
-//     <Section
-//       className={props.openCart ? "cart-container isOpen" : "cart-container"}
-//     >
-//       <Content>
-//         <button
-//           type="button"
-//           className="close-cart"
-//           onClick={() => props.setOpenCart(false)}
-//         >
-//           X
-//         </button>
-
-//         <header>
-//           <p>Sacola</p>
-//           <span>{props.products.length + 5} Itens</span>
-//         </header>
-
-//       </Content>
-//     </Section>
-//   );
-// };
 
 export default Shopping;

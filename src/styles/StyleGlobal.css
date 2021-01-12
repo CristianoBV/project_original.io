@@ -4,6 +4,7 @@
     --color-secondary: #5f75aa;
     --color-background: #ffffff;
     --color-login: #686868;
+    --color-togle: #686868;
     --color-border-icon: rgba(104, 104, 104, 0.4);
     --color-text-menu: #aeb6c1;
     --color-complement3: #a9095e;
@@ -135,43 +136,18 @@ textarea {
     }
 }
 
-
-/* carolseu */
-
-
-/* square buttons */
-
 .rec.rec-arrow {
     display: none;
 }
-
-
-/* round buttons on hover */
 
 .rec.rec-arrow:hover {
     display: none;
 }
 
-
-/* hide disabled buttons */
-
 .rec.rec-arrow:disabled {
     display: none;
 }
 
-
-/* disable default outline on focused items */
-
-
-/* add custom outline on focused items */
-
 .rec-carousel-item:focus {
     display: none;
-}
-
-.carrol {
-    @media (max-width: 767px) {
-        margin-right: 0;
-        width: 100%;
-    }
 }

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import Shopping from "../Shopping";
+import Dropdown from "../Dropdown";
 
 // IMAGES
 import logo from "../../assets/images/logo.svg";
@@ -12,34 +13,30 @@ import bag from "../../assets/icons/bag.svg";
 
 import {
   Container,
-  Menu,
   Logo,
   Content,
   Auth,
-  AuthMobile,
   Nav,
   Search,
   Form,
   Bag,
+  MenuBars,
 } from "./styles";
 
 const Header = () => {
-  const [openCart, setOpenCart] = useState(false);
-  const [openMenu, setOpenMenu] = useState(false);
-  const [openSearch, setOpenSearch] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleCloseMenu = (evt) => {
-    if (evt.target.tagName === "A") setOpenMenu(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
   };
-
+  const [openCart, setOpenCart] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
   const cart = useSelector((state) => state.cart.items);
 
   return (
     <>
       <Container>
-        <Menu onClick={() => setOpenMenu(!openMenu)}>
-          <div className={`hamburger ${openMenu ? "close-btn" : ""}`}></div>
-        </Menu>
+        <MenuBars onClick={toggle} />
         <Logo>
           <Link>
             <img src={logo} alt="Original.io" />
@@ -51,22 +48,13 @@ const Header = () => {
             <Link to="/signin">Entrar</Link>
             <Link to="/signup">Cadastrar-se</Link>
           </Auth>
-          <Nav
-            className={`navigation ${openMenu ? "menu-opened" : ""}`}
-            onClick={handleCloseMenu}
-          >
+          <Nav>
             <ul>
               {router.map((item, index) => (
                 <li to={item.link} key={index}>
                   <Link to="/">{item.title}</Link>
                 </li>
               ))}
-
-              <AuthMobile>
-                <Link to="/signin">Entrar</Link>
-                <span>|</span>
-                <Link to="/signup">Cadastrar-se</Link>
-              </AuthMobile>
             </ul>
           </Nav>
 
@@ -92,6 +80,8 @@ const Header = () => {
           </Search>
         </Content>
       </Container>
+      <Dropdown isOpen={isOpen} toggle={toggle} />
+
       <Shopping openCart={openCart} setOpenCart={setOpenCart} products={cart} />
     </>
   );

@@ -11,7 +11,7 @@ function Popup(props) {
         <button
           type="button"
           className="btn-close"
-          onClick={() => props.setOpenLightbox(false)}
+          onClick={() => props.setOpenPopup(false)}
         >
           X
         </button>

@@ -19,8 +19,6 @@ const Home = () => {
         <Carolseu />
         <Footer />
       </Provider>
-
-      {/* <Shelf /> */}
     </>
   );
 };

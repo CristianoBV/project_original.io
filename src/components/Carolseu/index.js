@@ -18,8 +18,8 @@ class CarouselProd extends React.Component {
       { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
       { width: 850, itemsToShow: 3, pagination: 3, pagination: false },
       { width: 1150, itemsToShow: 4, itemsToScroll: 4, pagination: false },
-      { width: 1450, itemsToShow: 4, itemsToScroll: 4, pagination: false },
-      { width: 1750, itemsToShow: 4, itemsToScroll: 4, pagination: false },
+      { width: 1450, itemsToShow: 5, itemsToScroll: 4, pagination: false },
+      { width: 1750, itemsToShow: 5, itemsToScroll: 4, pagination: false },
     ];
   }
 

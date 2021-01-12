@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { addProductToCart } from "../../store/modules/cart/actions";
 // API
-import ProductsServices from "../../services/product";
+import Api from "../../services/product";
 
 import Gallery from "../Gallery";
 import InfoProd from "../InfoProd";
@@ -13,7 +13,7 @@ const ProductSingle = () => {
   const [product, setProduct] = useState({});
 
   const fetchProduct = async () => {
-    const response = await ProductsServices.index();
+    const response = await Api.index();
 
     if (response.data) {
       return setProduct(response.data);

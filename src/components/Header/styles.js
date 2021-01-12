@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { shade } from "polished";
+import Bars from "../../assets/icons/bars.svg";
 
 export const Container = styled.header`
   width: 100%;
@@ -14,50 +15,25 @@ export const Container = styled.header`
   }
 `;
 
-export const Menu = styled.div`
-  @media (max-width: 750px) {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+export const MenuBars = styled.i`
+  display: none;
 
-    .hamburger {
-      width: 28px;
-      height: 3px;
-      background-color: var(--color-login);
-      position: absolute;
-      transition: all 0.4s ease-out;
-    }
-    .hamburger::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-color: var(--color-login);
-      position: absolute;
-      top: -8px;
-      left: 0;
-    }
-    .hamburger::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-color: var(--color-login);
-      position: absolute;
-      top: 8px;
-      left: 0;
-    }
-    .hamburger.close-btn {
-      transform: rotateZ(45deg);
-    }
-    .hamburger.close-btn::before,
-    .hamburger.close-btn::after {
-      top: 0;
-      transform: rotateZ(90deg);
-    }
+  @media screen and (max-width: 768px) {
+    display: block;
+    background-image: url(${Bars});
+    background-size: cover;
+    width: 23.33px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    color: var(--color-togle);
+    top: 0;
+    left: 30px;
+    margin-right: 35px;
+    transform: translate(-50%, 25%);
   }
 `;
+
 export const Logo = styled.div`
   width: 148px;
   height: 34px;
@@ -140,9 +116,6 @@ export const Nav = styled.nav`
     transform: translateX(-100%);
     transition: all 0.4s ease-out;
 
-    .menu-opened {
-      transform: translateX(0);
-    }
     ul {
       flex-direction: column;
     }
@@ -162,20 +135,6 @@ export const Nav = styled.nav`
       text-decoration: none;
       font-weight: bold;
       color: var(--color-complement4);
-    }
-  }
-`;
-
-export const AuthMobile = styled.li`
-  display: none;
-
-  @media (max-width: 750px) {
-    display: block;
-
-    a {
-      margin: 0;
-      color: var(--color-primary);
-      font-weight: bold;
     }
   }
 `;

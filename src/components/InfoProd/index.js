@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 
 import Popup from "../Popup";
 
-// import "./styles.css";
-
 import {
   Info,
   InfoPrice,
@@ -15,7 +13,7 @@ import {
   Size,
   SizeInfo,
   Button,
-} from "./istyles";
+} from "./styles";
 
 function InfoProd(props) {
   const [colorName, setColorName] = useState("");
