@@ -6,6 +6,8 @@ import store from "../../store";
 import Header from "../../components/Header";
 import TimeLine from "../../components/Timeline";
 import ProductSingle from "../../components/ProductSingle";
+import Carolseu from "../../components/Carolseu";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
         <Header />
         <TimeLine />
         <ProductSingle />
+        <Carolseu />
+        <Footer />
       </Provider>
 
       {/* <Shelf /> */}

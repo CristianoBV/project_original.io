@@ -136,4 +136,42 @@ textarea {
 }
 
 
-/* POPUP */
+/* carolseu */
+
+
+/* square buttons */
+
+.rec.rec-arrow {
+    display: none;
+}
+
+
+/* round buttons on hover */
+
+.rec.rec-arrow:hover {
+    display: none;
+}
+
+
+/* hide disabled buttons */
+
+.rec.rec-arrow:disabled {
+    display: none;
+}
+
+
+/* disable default outline on focused items */
+
+
+/* add custom outline on focused items */
+
+.rec-carousel-item:focus {
+    display: none;
+}
+
+.carrol {
+    @media (max-width: 767px) {
+        margin-right: 0;
+        width: 100%;
+    }
+}
