@@ -24,9 +24,9 @@ O layout da aplicação está disponível no Figma:
 ### Mobile
 
 <p align="center">
-  <img alt="Original.io" title="#Original.io" src="./screen/mobile.png" width="800px">
+  <img alt="Original.io" title="#Original.io" src="./screen/mobile.png" width="600px">
 
-  <img alt="Original.io" title="#Original.io" src="./screen/mobile02.png" width="800px">
+  <img alt="Original.io" title="#Original.io" src="./screen/mobile02.png" width="600px">
 </p>
 
 ### Web
