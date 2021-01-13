@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { shade } from "polished";
-import Bars from "../../assets/icons/bars.svg";
 
 export const Container = styled.header`
   width: 100%;
@@ -15,25 +14,6 @@ export const Container = styled.header`
   }
 `;
 
-export const MenuBars = styled.i`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    background-image: url(${Bars});
-    background-size: cover;
-    width: 23.33px;
-    height: 14px;
-    cursor: pointer;
-    position: relative;
-    color: var(--color-togle);
-    top: 0;
-    left: 30px;
-    margin-right: 35px;
-    transform: translate(-50%, 25%);
-  }
-`;
-
 export const Logo = styled.div`
   width: 148px;
   height: 34px;
@@ -41,6 +21,7 @@ export const Logo = styled.div`
 
   @media (max-width: 750px) {
     margin: 0 auto;
+    margin-left: 10rem;
   }
 `;
 export const Content = styled.div`
@@ -103,39 +84,7 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 750px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 6rem);
-    width: 100vw;
-    position: fixed;
-    top: 6rem;
-    left: 0;
-    z-index: 2000;
-    background-color: var(--color-gray);
-    transform: translateX(-100%);
-    transition: all 0.4s ease-out;
-
-    ul {
-      flex-direction: column;
-    }
-    ul li {
-      font-size: 2rem;
-      margin: 1rem 0;
-    }
-    ul li {
-      display: block;
-    }
-    ul li a {
-      margin: 0;
-      color: var(--color-primary);
-      font-weight: bold;
-    }
-    ul li a {
-      text-decoration: none;
-      font-weight: bold;
-      color: var(--color-complement4);
-    }
+    display: none;
   }
 `;
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import Shopping from "../Shopping";
-import Dropdown from "../Dropdown";
+import Burger from "../NavBar";
 
 // IMAGES
 import logo from "../../assets/images/logo.svg";
@@ -20,15 +20,9 @@ import {
   Search,
   Form,
   Bag,
-  MenuBars,
 } from "./styles";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
   const [openCart, setOpenCart] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
   const cart = useSelector((state) => state.cart.items);
@@ -36,7 +30,7 @@ const Header = () => {
   return (
     <>
       <Container>
-        <MenuBars onClick={toggle} />
+        <Burger />
         <Logo>
           <Link>
             <img src={logo} alt="Original.io" />
@@ -80,7 +74,6 @@ const Header = () => {
           </Search>
         </Content>
       </Container>
-      <Dropdown isOpen={isOpen} toggle={toggle} />
       <Shopping openCart={openCart} setOpenCart={setOpenCart} products={cart} />
     </>
   );
