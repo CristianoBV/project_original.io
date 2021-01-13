@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Container, CardProd, Product, Colors, Button, Plots } from "./styles";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const Card = ({
   image,

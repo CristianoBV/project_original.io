@@ -81,7 +81,6 @@ const Header = () => {
         </Content>
       </Container>
       <Dropdown isOpen={isOpen} toggle={toggle} />
-
       <Shopping openCart={openCart} setOpenCart={setOpenCart} products={cart} />
     </>
   );
