@@ -21,7 +21,6 @@ export const Logo = styled.div`
 
   @media (max-width: 750px) {
     margin: 0 auto;
-    margin-left: 12rem;
   }
 `;
 export const Content = styled.div`
