@@ -100,13 +100,13 @@ export const News = styled.div`
     padding: 0 3rem;
   }
 
-  > label {
+  form > label {
     font-size: 1.2rem;
     color: var(--color-black);
     opacity: 0.8;
   }
 
-  > input {
+  form > input {
     border: none;
     border-bottom: 2px solid var(--color-complement1);
     margin-top: 5px;
@@ -114,7 +114,7 @@ export const News = styled.div`
     padding: 0 5px;
   }
 
-  > input + input {
+  form > input + input {
     margin-bottom: 0;
 
     &:focus {
@@ -128,7 +128,7 @@ export const News = styled.div`
     }
   }
 
-  > button {
+  form > button {
     border: none;
     width: 110px;
     height: 50px;
@@ -163,18 +163,20 @@ export const News = styled.div`
       justify-content: space-between;
       width: 100%;
       margin-top: 1rem;
-      padding: 0 1.5rem;
+      padding: 0 6rem;
     }
 
-    > input[type="text"] {
+    form > input[type="text"] {
       width: 100%;
+      margin: 20px 0;
     }
 
-    > input[type="email"] {
+    form > input[type="email"] {
       width: calc(100% - 100px);
+      margin: 20px 0;
     }
 
-    > label {
+    form > label {
       font-size: 1.2rem;
       color: var(--color-complement1);
       opacity: 0.8;
@@ -182,7 +184,7 @@ export const News = styled.div`
       margin-bottom: 5px;
     }
 
-    > button {
+    form > button {
       width: 80px;
       height: 40px;
       border-radius: 4px;
