@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./screen/web.png" />
+    <img alt="Original.io" title="#Original.io" src="./screen/web.png" />
 </h1>
 
 <h4 align="center"> 
